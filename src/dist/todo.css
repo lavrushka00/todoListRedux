@@ -1,0 +1,188 @@
+* {
+  font-family: "Roboto";
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e7f6ff;
+}
+
+.container {
+  width: 375px;
+  height: 812px;
+  position: relative;
+  background-color: #ffff;
+  margin: auto;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 60px 40px 30px 40px;
+}
+.header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header button {
+  border: none;
+  background: #F2F2F2;
+  font-size: 14px;
+  border-radius: 4px;
+  width: 86px;
+  height: 27px;
+  cursor: pointer;
+}
+.header span {
+  width: fit-content;
+  height: fit-content;
+  text-align: end;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.main .list {
+  padding-right: 40px;
+  padding-left: 40px;
+  height: 550px;
+}
+.main .list ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: auto;
+  height: 530px;
+}
+.main .list ul li {
+  font-weight: 400;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  height: max-content;
+}
+.main .list ul img {
+  cursor: pointer;
+}
+.main .list ul::-webkit-scrollbar {
+  width: 5px;
+}
+.main .list ul::-webkit-scrollbar-track {
+  background: white;
+}
+.main .list ul::-webkit-scrollbar-thumb {
+  background-color: #c2bdbd;
+  border-radius: 20px;
+}
+.main .list span {
+  margin-left: 14px;
+  width: 100%;
+  height: max-content;
+  word-wrap: break-word;
+}
+.main .footer {
+  height: 50px;
+  display: flex;
+  padding-right: 40px;
+  padding-left: 40px;
+  justify-content: flex-end;
+}
+.main .footer div {
+  background-color: #ffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.add {
+  position: absolute;
+  width: 375px;
+  background-color: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+  bottom: 0;
+  height: 650px;
+  padding-top: 40px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.addcont {
+  margin-left: 40px;
+  width: 295px;
+}
+.addcont textarea {
+  border-radius: 10px;
+  border: 2px solid #e5e5e5;
+  height: 160px;
+  width: 295px;
+  resize: none;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.addcont textarea:focus {
+  outline: none;
+}
+.addcont div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.addcont div button {
+  width: 137px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.addcont div .btn-Close {
+  background: #F2F2F2;
+  color: #4d4d4d;
+}
+.addcont div .btn-Add {
+  background: #23a3ff;
+  color: white;
+}
+.addcont div .btn-Close:active {
+  background: #d1cece;
+  color: #706e6e;
+}
+.addcont div .btn-Add:active {
+  background: #1a77b9;
+}
+
+.chengeItem {
+  position: absolute;
+  width: 375px;
+  background-color: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+  bottom: 0;
+  height: 650px;
+  padding-top: 40px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+.chengeItem .chengeContent {
+  border-radius: 10px;
+  border: 2px solid #e5e5e5;
+  height: 60px;
+  width: 295px;
+  resize: none;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}

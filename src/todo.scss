@@ -1,0 +1,233 @@
+
+  *{
+    font-family:'Roboto';
+  }
+
+  body {
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    
+      background-color: #e7f6ff;
+
+      
+  }
+  
+
+  .container {
+      width: 375px;
+      height: 812px;
+      position: relative;
+
+      background-color: #ffff;
+      margin: auto;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .header {
+    padding: 60px 40px 30px 40px;
+
+
+      div {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+      }
+      button {
+          border: none;
+          background: #F2F2F2;
+           font-size: 14px;
+         
+          border-radius: 4px;
+
+          width: 86px;
+          height: 27px;
+          cursor: pointer;
+      }
+
+      span {
+          width: fit-content;
+          height: fit-content;
+          text-align:end;
+          font-size: 28px;
+          font-weight: 800;
+      }
+  }
+
+  .main {
+
+      .list {
+        padding-right: 40px;
+        padding-left: 40px;
+        height: 550px;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            overflow:auto;
+            height: 530px;
+            
+            li {
+                font-weight: 400;
+                font-size: 18px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                width: 100%;
+                min-height: 50px;
+                height: max-content;
+            }
+            img {
+                cursor: pointer;
+            }
+        }
+        ul::-webkit-scrollbar {
+            width: 5px;
+        }
+        ul::-webkit-scrollbar-track {
+            background: white;
+        }
+        ul::-webkit-scrollbar-thumb {
+            background-color: rgb(194, 189, 189);
+            border-radius: 20px; 
+        }
+        span {
+            margin-left: 14px;
+            width: 100%;
+            height: max-content;
+            word-wrap: break-word;
+        }
+      }
+
+      .footer {
+        height: 50px;
+        display: flex;
+        padding-right: 40px;
+        padding-left: 40px;
+        justify-content: flex-end;
+        
+        div {
+            background-color: #ffff;
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+    
+  }
+  
+  }
+  .add {
+    position: absolute;
+    width: 375px;
+    
+  
+    background-color: white;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    z-index: 5;
+    bottom: 0;
+    height: 650px;
+    padding-top: 40px;
+
+
+
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    
+  }
+
+
+.addcont {
+  margin-left: 40px;
+  width: 295px;
+
+
+
+  textarea {
+   border-radius: 10px;
+    border: 2px solid rgba(229, 229, 229, 1);
+    height: 160px;
+    width: 295px;
+    resize: none;
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  textarea:focus {
+    outline: none;
+   }
+
+   div{
+       display: flex;
+       justify-content: space-between;
+       flex-direction: row;
+        margin-top: 30px;
+
+       button {
+           width: 137px;
+           height: 40px;
+           border-radius: 10px;
+           text-align: center;
+           border: none;
+           cursor: pointer;
+       }
+
+       .btn-Close{
+           background: #F2F2F2;
+           color:rgba(77, 77, 77, 1);
+       }
+       .btn-Add{
+           background: rgba(35, 163, 255, 1);
+           color: rgba(255, 255, 255, 1);
+       }
+       .btn-Close:active {
+        background: #d1cece;
+        color:rgb(112, 110, 110);
+       }
+       .btn-Add:active {
+        background: rgb(26, 119, 185);
+       }
+
+
+   }
+}
+
+.chengeItem {
+    position: absolute;
+    width: 375px;
+    
+  
+    background-color: white;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    z-index: 5;
+    bottom: 0;
+    height: 650px;
+    padding-top: 40px;
+
+
+
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+
+
+    .chengeContent {
+        border-radius: 10px;
+         border: 2px solid rgba(229, 229, 229, 1);
+         height: 60px;
+         width: 295px;
+         resize: none;
+         padding-top: 20px;
+         font-size: 16px;
+         font-weight: 400;
+       }
+}
+
+
+
